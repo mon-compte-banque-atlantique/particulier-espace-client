@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d4d4d4;
+	font-family: arial;
+}
+
+nav{
+		
+	box-bottom-shadow:1px 1px 2px gray;
+	background-color: #fff;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: center;
+
+}
+
+img{
+	width: 50%;
+}
+
+.login{
+	background-color: #fff;
+	width: 85%;
+	padding: 20px;
+	margin: auto;
+	margin-top: 10%;
+	text-align: center
+}
+
+h3{
+	color:maroon;
+}
+
+input{
+	width: 80%;
+	padding: 10px;
+	font-size: 13px;
+	border-radius:5px;
+	
+}
+
+button{
+	width: 30%;
+	background-color: #eb7434;
+	color: #fff;
+	padding: 10px;
+	border-radius:5px;
+}
+
+.check{
+	width: auto;
+}
